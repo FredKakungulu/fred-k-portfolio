@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Fred Kakungulu</title>
+  <meta name="description" content="Django, PostgreSQL, and statistical computing projects by Fred Kakungulu, including the MUSSA Online Voting System and a clinic inventory management platform.">
+  <meta name="theme-color" content="#090a0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f0c36a'/%3E%3Ctext x='50' y='64' font-family='Georgia' font-size='42' font-weight='600' fill='%231c1508' text-anchor='middle'%3EFK%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FK</span>
+        <span class="logo-text">
+          <strong>Fred Kakungulu</strong>
+          <span>Statistics &amp; systems</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-header container">
+      <span class="mono">Projects</span>
+      <h1>Things I've built.</h1>
+      <p>Mostly Django and PostgreSQL systems, built for real organisations rather than as exercises — plus the group and academic work that trained me on the fundamentals.</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-list">
+
+          <article class="project-card">
+            <span class="project-index">01</span>
+            <div>
+              <div class="project-title-row">
+                <h3>MUSSA Online Voting System</h3>
+                <span class="status status-live">Deployed</span>
+              </div>
+              <p class="project-desc">My dissertation project: a full online voting platform built for Makerere University Students' Association elections. It includes a two-tier role model separating system administration from election-commission administration, a ballot-secrecy-preserving audit trail with CSV, Excel, and PDF export, and a public results page that switches state automatically as an election opens and closes. Security hardening included environment-based secrets, OTP attempt limiting, and admin IP throttling.</p>
+              <div class="tag-row">
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Self-hosted CSS system</span>
+                <span class="tag">Dark mode</span>
+              </div>
+              <div class="project-links">
+                <a href="https://mussaelections.com" target="_blank" rel="noopener">Visit site →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-index">02</span>
+            <div>
+              <div class="project-title-row">
+                <h3>RHU Katego Clinic — Store Inventory Management System</h3>
+                <span class="status status-progress">In progress</span>
+              </div>
+              <p class="project-desc">A web-based inventory management system built for a reproductive health clinic in Kampala, currently in development. It spans eleven Django apps and thirty-seven templates, with Excel export handled through openpyxl and an accompanying software requirements specification document.</p>
+              <div class="tag-row">
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Bootstrap 5</span>
+                <span class="tag">Alpine.js</span>
+                <span class="tag">openpyxl</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-index">03</span>
+            <div>
+              <div class="project-title-row">
+                <h3>Verified Centralized Statistical Data Repository (VCSDR)</h3>
+                <span class="status status-academic">Group project</span>
+              </div>
+              <p class="project-desc">An 18-member Makerere group project to build a verified repository for statistical data, rebuilt from an original PHP/MySQL version into Django and PostgreSQL with a custom Makerere-green design system replacing Bootstrap. I worked across both the Programmer and Database Admin &amp; Security teams, including customising Django's native admin interface and writing team compliance documentation.</p>
+              <div class="tag-row">
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Team project</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-index">04</span>
+            <div>
+              <div class="project-title-row">
+                <h3>Makerere Actuarial Society Website</h3>
+                <span class="status status-academic">Static site</span>
+              </div>
+              <p class="project-desc">A static Home / About / Activities / Contact / Leadership site for the Makerere Actuarial Society, built in plain HTML, CSS, and JavaScript for hosting on Cloudflare Pages. It links out to a separate Django-based voting system for society elections, with a JavaScript check that confirms the voting site is reachable before sending visitors there.</p>
+              <div class="tag-row">
+                <span class="tag">HTML/CSS/JS</span>
+                <span class="tag">Cloudflare Pages</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <p class="footer-kicker">Open to work</p>
+        <p class="footer-title">Django systems, data, and analysis.</p>
+      </div>
+      <a href="mailto:fredkakungulu@outlook.com" class="btn btn-primary">Email Fred</a>
+    </div>
+    <div class="container footer-row">
+      <span class="mono">© <span id="year"></span> Fred Kakungulu</span>
+      <div class="footer-links">
+        <a href="https://github.com/FredKakungulu" target="_blank" rel="noopener">GitHub</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

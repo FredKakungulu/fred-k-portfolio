@@ -613,6 +613,35 @@ a.inline-link:hover { color: #fff; border-color: var(--gold); }
 .project-title-row h3 { font-size: 1.35rem; }
 .project-desc { margin-bottom: 16px; font-size: 1rem; }
 
+.case-study {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.case-study div {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.2);
+}
+.case-study dt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.case-study dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+@media (max-width: 700px) {
+  .case-study { grid-template-columns: 1fr; }
+}
+
 .status {
   font-family: var(--font-mono);
   font-size: 0.68rem;

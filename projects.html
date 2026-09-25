@@ -53,7 +53,25 @@
                 <h3>MUSSA Online Voting System</h3>
                 <span class="status status-live">Deployed</span>
               </div>
-              <p class="project-desc">My dissertation project: a full online voting platform built for Makerere University Students' Association elections. It includes a two-tier role model separating system administration from election-commission administration, a ballot-secrecy-preserving audit trail with CSV, Excel, and PDF export, and a public results page that switches state automatically as an election opens and closes. Security hardening included environment-based secrets, OTP attempt limiting, and admin IP throttling.</p>
+              <p class="project-desc">My dissertation project: the online voting platform for Makerere University Students' Association elections, now deployed at mussaelections.com.</p>
+              <dl class="case-study">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>The association needed a full election system, not a form that collects votes.</dd>
+                </div>
+                <div>
+                  <dt>Role</dt>
+                  <dd>I built it as my dissertation, in Django and PostgreSQL.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>Ballots stay secret, and the audit trail still exports to CSV, Excel, and PDF. System administration is separate from election-commission administration.</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>The public results page changes state on its own when an election opens and closes. Secrets come from the environment, OTP attempts are limited, and admin traffic is throttled by IP.</dd>
+                </div>
+              </dl>
               <div class="tag-row">
                 <span class="tag">Django</span>
                 <span class="tag">PostgreSQL</span>
